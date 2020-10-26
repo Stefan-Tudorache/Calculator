@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  color: #00ff6c;
+  background-color: #00aaff;
+  opacity: 0.6;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+p {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  letter-spacing: 3px;
+  color: blueviolet;
+  background-color: #00ff6c;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("./data6-1370x742.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container {
+  max-width: 100%;
+  height: 60%;
+  margin: auto;
+  background-color: rgba(17, 17, 36, 0.9);
+}
+body .container h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+  color: blueviolet;
+}
+body .container-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  height: 80%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+body .container-input label {
+  display: block;
+  color: blueviolet;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+body .container-input input {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid blueviolet;
+  border-radius: 10px;
+  color: blueviolet;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+body .container-input input:focus {
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */

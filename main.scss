@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+$primary-color: blueviolet;
+$background-color: rgba(17, 17, 36, 0.9);
+$input-color: linear-gradient(to right, #00aaff, #00ff6c);
+
+.btn {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  color: #00ff6c;
+  background-color: #00aaff;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+p {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  letter-spacing: 3px;
+  color: $primary-color;
+  background-color: #00ff6c;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("./data6-1370x742.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & .container {
+    max-width: 100%;
+    height: 60%;
+    margin: auto;
+    background-color: $background-color;
+
+    & h1 {
+      text-align: center;
+      padding: 20px;
+      font-size: 3rem;
+      color: $primary-color;
+    }
+
+    &-input {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px;
+      height: 80%;
+      justify-content: space-evenly;
+      text-align: center;
+
+      & label {
+        display: block;
+        color: $primary-color;
+        font-size: 1.2rem;
+        margin: 5px 0;
+      }
+
+      & input {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid $primary-color;
+        border-radius: 10px;
+        color: $primary-color;
+        font-weight: bold;
+        letter-spacing: 3px;
+
+        &:focus {
+          background: $input-color;
+          outline: none;
+        }
+      }
+    }
+  }
+}
