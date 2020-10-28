@@ -3,10 +3,10 @@ const calculate = () => {
 
   const inputOne = document.querySelector("#firstNumber").value;
   const inputTwo = document.querySelector("#secondNumber").value;
-  
+
   const numberOne = parseInt(inputOne);
   const numberTwo = parseInt(inputTwo);
-  
+
   const operator = document.querySelector('#operator').value;
   const pTag = document.querySelector("#result");
 
@@ -16,33 +16,33 @@ const calculate = () => {
     alert("You Broke It !!! Please enter a number or a correct operator in the input boxes.")
 
   } else if (operator === "+") {
-   pTag.innerHTML = numberOne + numberTwo;
+    pTag.innerHTML = numberOne + numberTwo;
 
   } else if (operator === "-") {
-   pTag.innerHTML = numberOne - numberTwo;
+    pTag.innerHTML = numberOne - numberTwo;
 
-  } else if (operator === "*") {  
-   pTag.innerHTML = numberOne * numberTwo;
+  } else if (operator === "*") {
+    pTag.innerHTML = numberOne * numberTwo;
 
   } else if (operator === "/") {
-   pTag.innerHTML = numberOne / numberTwo;
+    pTag.innerHTML = numberOne / numberTwo;
 
-  } else  if (operator === "**") {
+  } else if (operator === "**") {
     pTag.innerHTML = numberOne ** numberTwo;
 
-  } else { 
-   pTag.innerHTML = "You Broke it !";
-   alert("You Broke It !!! Please enter a number or a correct operator in the input boxes.")
+  } else {
+    pTag.innerHTML = "You Broke it !";
+    alert("You Broke It !!! Please enter a number or a correct operator in the input boxes.")
   }
 }
 
 
 
 const reset = () => {
-  
+
   const inputOne = document.querySelector("#firstNumber");
   const inputTwo = document.querySelector("#secondNumber");
-  
+
   const operator = document.querySelector('#operator');
   const pTag = document.querySelector("#result");
 
